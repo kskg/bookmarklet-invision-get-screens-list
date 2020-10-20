@@ -44,12 +44,12 @@ https://projects.invisionapp.com/share/[Share ID]]#/[Screnn ID]
 - Or rewrite the address of the unwanted bookmark into the code of [main.min.js](./main.min.js). <sup><a name="1">[^1](#notes_1)</a></sup>
 
 ### Get the screen of the project page.
-1. open a project in InVision
+1. open a project in InVision.
 2. make sure the URL is `https://projects.invisionapp.com/d/main#/projects/prototypes/[Project ID]`.
 3. run the bookmarklet.
 
 ### Get the screen of the shared page.
-1. Open an InVision project
+1. Open an InVision project.
 2. Press the "Share" button in the header.
 3. Press the "public share link" or "Link Settings" link at the bottom of the modal to publish the share URL.
 4. Access the shared URL and press the "Screens" button in the lower right corner of the screen.
@@ -67,7 +67,7 @@ It has been tested in Safari and Google Chrome on Mac OS.
 Due to changes in InVision's specifications, it may not work.
 
 ## Footnotes
-<a name="notes_1">[^1](#1)</a>: We use [Closure Compiler] (https://closure-compiler.appspot.com/home) to compress and optimize the code for speed.
+<a name="notes_1">[^1](#1)</a>: We use [Closure Compiler](https://closure-compiler.appspot.com/home) to compress and optimize the code for speed.
 
 ## Author
 - [GitHub](https://github.com/kskg)
