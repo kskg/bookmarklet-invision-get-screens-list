@@ -1,52 +1,63 @@
 # InVision Screens List Bookmarklet
 
 ## 概要
-InVisionの共有URLからスクリーン（ページ）の一覧をすべて取得して整形するブックマークレットです。
-
-## 特徴
-- プロジェクト名、ディバイダー名、スクリーン名、スクリーンURLを取得して整形します。
-- 各項目の接頭辞、接尾辞を変更可能です。
+InVisionのプロジェクトから、スクリーンの一覧を取得して整形するブックマークレットです。
+取得する対象のページは2種類で、プロジェクトページと共有ページで表示されるスクリーンです。
 
 例：
 ```
 ---
+
 # Project Title
 
 ## Divider Title 1
 
 Screens Title A
-https://projects.invisionapp.com/share/xxxxxxxxxxx#/000000000
+https://projects.invisionapp.com/share/[Share ID]]#/[Screnn ID]
 
 Screens Title B
-https://projects.invisionapp.com/share/xxxxxxxxxxx#/000000000
+https://projects.invisionapp.com/share/[Share ID]]#/[Screnn ID]
 
 ## Divider Title 2
 
 Screens Title A
-https://projects.invisionapp.com/share/xxxxxxxxxxx#/000000000
+https://projects.invisionapp.com/share/[Share ID]]#/[Screnn ID]
 
 Screens Title B
-https://projects.invisionapp.com/share/xxxxxxxxxxx#/000000000
+https://projects.invisionapp.com/share/[Share ID]]#/[Screnn ID]
+
 ---
 ```
 
-## 使い方
-- 不要なブックマークのアドレスを[main.min.js](./main.min.js)のコードに書き換える <sup><a name="1">[^1](#notes_1)</a></sup>
-- InVisionのプロジェクトを開く
-- ヘッダーにある「Share」ボタンを押す
-- モーダル下部の「public share link」か「Link Settings」リンクを押して共有URLを発行する
-- 共有URLにアクセスし、画面右下の「Screens」ボタンを押す
-- URLが`https://projects.invisionapp.com/share/[Share ID]]#/screens?browse`になっている事を確認する
-- ブックマークレットを実行する
+## 特徴
+- プロジェクト名、ディバイダー名、スクリーン名、スクリーンURLを取得して整形します。
+- [main.js](./main.js)を直接編集して、各項目の接頭辞と接尾辞を変更できます。
 
-各項目の接頭辞、接尾辞を変更したい場合は、[main.js](./main.js)を書き換えてブックマークレット化してください。
+## 使い方
+
+### 準備
+- [このページ](./docs/index.html)にあるリンクをブラウザのブックマークバーにドラッグ＆ドロップして保存する。
+- もしくは、不要なブックマークのアドレスを[main.min.js](./main.min.js)のコードに書き換える <sup><a name="1">[^1](#notes_1)</a></sup>
+
+### プロジェクトページのスクリーンを取得する
+1. InVisionのプロジェクトを開く
+2. URLが`https://projects.invisionapp.com/d/main#/projects/prototypes/[Project ID]`になっている事を確認する
+3. ブックマークレットを実行する
+
+### 共有ページのスクリーンを取得する
+1. InVisionのプロジェクトを開く
+2. ヘッダーにある「Share」ボタンを押す
+3. モーダル下部の「public share link」か「Link Settings」リンクを押して共有URLを発行する
+4. 共有URLにアクセスし、画面右下の「Screens」ボタンを押す
+5. URLが`https://projects.invisionapp.com/share/[Share ID]#/screens?browse`になっている事を確認する
+6. ブックマークレットを実行する
 
 ## 開発環境
 - MacOS 10.15.6
 - Safari 14.0
 - jQuery 2.2.4
 
-Mac OSのSafariで動作確認済みです。
+Mac OSのSafari、Google Chromeで動作確認済みです。
 
 ## 注意事項
 InVisionの仕様変更により、動作しなくなる可能性があります。
