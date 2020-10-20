@@ -1,12 +1,14 @@
+📖 English / [Japanese](./README_JP.md)  
+  
 # InVision Screens List Bookmarklet
-![カバー画像](cover.jpg)
+![Cover image](cover.jpg)
 Photo by [Leah Smit](https://unsplash.com/@4cats?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/owl?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
 
-## 概要
-InVisionのプロジェクトから、スクリーンの一覧を取得して整形するブックマークレットです。  
-取得する対象のページは2種類で、プロジェクトページと共有ページで表示されるスクリーンです。
+## Overview
+This is a bookmarklet that retrieves a list of screens from an InVision project and formats them.  
+There are two types of pages to be retrieved: project pages and screens displayed on shared pages.
 
-例：
+e.g.
 ```
 ---
 
@@ -31,47 +33,47 @@ https://projects.invisionapp.com/share/[Share ID]]#/[Screnn ID]
 ---
 ```
 
-## 特徴
-- プロジェクト名、ディバイダー名、スクリーン名、スクリーンURLを取得して整形します。
-- [main.js](./main.js)を直接編集して、各項目の接頭辞と接尾辞を変更できます。
+## Features
+- Get the project name, divider name, screen name and screen URL and format it.
+- [main.js](./main.js)directly to change the prefix and suffix for each item.
 
-## 使い方
+## Usage
 
-### 準備
-- [このページ](https://kskg.github.io/bookmarklet-invision-screens-list/)にあるリンクをブラウザのブックマークバーにドラッグ＆ドロップして保存する。
-- もしくは、不要なブックマークのアドレスを[main.min.js](./main.min.js)のコードに書き換える <sup><a name="1">[^1](#notes_1)</a></sup>
+### Preparation
+- Drag and drop the link from [this page](https://kskg.github.io/bookmarklet-invision-screens-list/) to your browser's bookmarks bar to save it.
+- Or rewrite the address of the unwanted bookmark into the code of [main.min.js](./main.min.js). <sup><a name="1">[^1](#notes_1)</a></sup>
 
-### プロジェクトページのスクリーンを取得する
-1. InVisionのプロジェクトを開く
-2. URLが`https://projects.invisionapp.com/d/main#/projects/prototypes/[Project ID]`であるか確認する
-3. ブックマークレットを実行する
+### Get the screen of the project page.
+1. open a project in InVision
+2. make sure the URL is `https://projects.invisionapp.com/d/main#/projects/prototypes/[Project ID]`.
+3. run the bookmarklet.
 
-### 共有ページのスクリーンを取得する
-1. InVisionのプロジェクトを開く
-2. ヘッダーにある「Share」ボタンを押す
-3. モーダル下部の「public share link」か「Link Settings」リンクを押して共有URLを発行する
-4. 共有URLにアクセスし、画面右下の「Screens」ボタンを押す
-5. URLが`https://projects.invisionapp.com/share/[Share ID]#/screens?browse`であるか確認する
-6. ブックマークレットを実行する
+### Get the screen of the shared page.
+1. Open an InVision project
+2. Press the "Share" button in the header.
+3. Press the "public share link" or "Link Settings" link at the bottom of the modal to publish the share URL.
+4. Access the shared URL and press the "Screens" button in the lower right corner of the screen.
+5. Make sure the URL is `https://projects.invisionapp.com/share/[Share ID]#/screens?browse`.
+6. Run a bookmarklet.
 
-## 開発環境
+## Development Environment
 - MacOS 10.15.6
 - Safari 14.0
 - jQuery 2.2.4
 
-Mac OSのSafari、Google Chromeで動作確認済みです。
+It has been tested in Safari and Google Chrome on Mac OS.
 
-## 注意事項
-InVisionの仕様変更により、動作しなくなる可能性があります。
+## Notes
+Due to changes in InVision's specifications, it may not work.
 
-## 脚注
-<a name="notes_1">[^1](#1)</a>: 速度を重視して[Closure Compiler](https://closure-compiler.appspot.com/home)でコードの圧縮・最適化をしています。  
+## Footnotes
+<a name="notes_1">[^1](#1)</a>: We use [Closure Compiler] (https://closure-compiler.appspot.com/home) to compress and optimize the code for speed.
 
-## 作者
+## Author
 - [GitHub](https://github.com/kskg)
 - [Twitter](https://twitter.com/kskg)
 
-ご意見、ご感想はお気軽にください。開発の参考にさせていただきます🤓
+Please feel free to give me your comments and suggestions. We'll use it as a reference for development🤓
 
-## ライセンス
+## License
 MIT
