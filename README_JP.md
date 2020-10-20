@@ -1,6 +1,6 @@
 📖 [English](./README.md) / Japanese  
   
-# InVision Screens List Bookmarklet
+# InVision Get Screens List Bookmarklet
 ![カバー画像](cover.jpg)
 Photo by [Leah Smit](https://unsplash.com/@4cats?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/owl?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
 
@@ -40,7 +40,7 @@ https://projects.invisionapp.com/share/[Share ID]]#/[Screnn ID]
 ## 使い方
 
 ### 準備
-- [このページ](https://kskg.github.io/bookmarklet-invision-screens-list/)にあるリンクをブラウザのブックマークバーにドラッグ＆ドロップして保存する。
+- [このページ](https://kskg.github.io/bookmarklet-invision-get-screens-list/)にあるリンクをブラウザのブックマークバーにドラッグ＆ドロップして保存する。
 - もしくは、不要なブックマークのアドレスを[main.min.js](./main.min.js)のコードに書き換える <sup><a name="1">[^1](#notes_1)</a></sup>
 
 ### プロジェクトページのスクリーンを取得する
