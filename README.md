@@ -17,18 +17,18 @@ e.g.
 ## Divider Title 1
 
 Screens Title A
-https://projects.invisionapp.com/share/[Share ID]]#/[Screnn ID]
+https://projects.invisionapp.com/share/[Share ID]]#/[Screen ID]
 
 Screens Title B
-https://projects.invisionapp.com/share/[Share ID]]#/[Screnn ID]
+https://projects.invisionapp.com/share/[Share ID]]#/[Screen ID]
 
 ## Divider Title 2
 
 Screens Title A
-https://projects.invisionapp.com/share/[Share ID]]#/[Screnn ID]
+https://projects.invisionapp.com/share/[Share ID]]#/[Screen ID]
 
 Screens Title B
-https://projects.invisionapp.com/share/[Share ID]]#/[Screnn ID]
+https://projects.invisionapp.com/share/[Share ID]]#/[Screen ID]
 
 ---
 ```
